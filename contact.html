@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<!--  This site was created by Dennis Snellenberg (Code by Dennis)  -->
 <html lang="en">
-  <!-- Mirrored from dennissnellenberg.com/contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Apr 2024 18:49:48 GMT -->
-  <!-- Added by HTTrack --><meta
+<meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
-  /><!-- /Added by HTTrack -->
+  />
   <head>
     <meta charset="utf-8" />
     <meta
@@ -13,6 +11,54 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <title>Contact - Vishal</title>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+<script type="text/javascript">
+  function sendEmail(){
+    const name = document.querySelector('#form-name').value;
+    const email = document.querySelector('#form-email').value;
+    const company = document.querySelector('#form-company').value;
+    const service = document.querySelector('#form-service').value;
+    const message = document.querySelector('#form-message').value;
+
+    const eBody = `<b>Name: </b>${name}
+    <br/>
+    <b>Email: </b>${email}
+    <br/>
+    <b>Company: </b>${company}
+    <br/>
+    <b>Service: </b>${service}
+    <br/>
+    <b>Message: </b>${message}`;
+
+    Email.send({
+    SecureToken : "ceb7a6fb-1e69-47fa-a1bf-50816ac8135e",
+    To : 'vishal.webengg@gmail.com',
+    From : "vishal.webengg@gmail.com",
+    Subject : "Enquiry From Portfolio",
+    Body : eBody
+})
+          .then(function (message) {
+            console.log(message);
+            if(message === 'OK'){
+              window.location.href = "success.html"
+            }else{
+              alert("Something went wrong!");
+            }
+          });
+
+  }
+ 
+  
+</script>
+
+
+
+
+
+
     <meta
       name="description"
       content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the India."
@@ -24,9 +70,8 @@
     />
     <meta
       property="og:image"
-      content="media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg"
     />
-    <meta property="og:site_name" content="Dennis Snellenberg" />
+    <meta property="og:site_name" content="Vishal" />
     <meta property="og:locale" content="en" />
     <meta property="og:type" content="website" />
     <meta property="twitter:title" content="Contact - Vishal" />
@@ -36,12 +81,17 @@
     />
     <meta
       property="twitter:image"
-      content="media/site/89d468b455-1646837228/meta-image-dennis-snellenberg-860x540-crop-q72.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="google" content="notranslate" />
     <meta property="og:locale" content="en" />
     <link rel="canonical" href="contact.html" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico">
+    <link rel="manifest" href="assets/img/icons/site.webmanifest">
 
     <link
       rel="preload"
@@ -57,12 +107,6 @@
     <link href="assets/css/components.css" rel="stylesheet" />
     <link href="assets/css/style-new.css" rel="stylesheet" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico">
-    <link rel="manifest" href="assets/img/icons/site.webmanifest">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-SGWQQRQ15Y"
@@ -185,14 +229,14 @@
                             <h5>Socials</h5>
                             <ul>
                                 <li class="btn btn-link btn-link-external">
-                                    <a href="https://www.awwwards.com/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                    <a href="https://github.com/vishal257" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                         <span class="btn-text">
                                             <span class="btn-text-inner">Github</span>
                                         </span>
                                     </a>
                                 </li>
                                 <li class="btn btn-link btn-link-external">
-                                    <a href="https://www.instagram.com/codebydennis/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                    <a href="https://www.instagram.com/itz_vishal6436/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                         <span class="btn-text">
                                             <span class="btn-text-inner">Instagram</span>
                                         </span>
@@ -206,7 +250,7 @@
                                     </a>
                                 </li>
                                 <li class="btn btn-link btn-link-external">
-                                    <a href="https://www.linkedin.com/in/dennissnellenberg/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                    <a href="https://www.linkedin.com/in/vishal-4a3724289" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                         <span class="btn-text">
                                             <span class="btn-text-inner">LinkedIn</span>
                                         </span>
@@ -350,12 +394,10 @@
               <div class="flex-col">
                 <form
                   class="form"
-                  method="post"
-                  action="https://dennissnellenberg.com/contact"
-                  enctype="multipart/form-data"
-                  novalidate
+                  onsubmit="sendEmail()"
+                  id="my-form"
                 >
-                  <div class="website-field">
+                  <!-- <div class="website-field">
                     <label class="label" for="tel">Phone Number</label>
                     <input
                       class="field"
@@ -364,7 +406,7 @@
                       name="tel"
                       tabindex="-1"
                     />
-                  </div>
+                  </div> -->
                   <div class="form-col">
                     <h5>01</h5>
                     <label class="label" for="name">What's your name?</label>
@@ -373,7 +415,6 @@
                       type="text"
                       id="form-name"
                       name="name"
-                      value=""
                       required
                       placeholder="John Doe *"
                     />
@@ -386,7 +427,6 @@
                       type="email"
                       id="form-email"
                       name="email"
-                      value=""
                       required
                       placeholder="john@doe.com *"
                     />
@@ -401,8 +441,6 @@
                       type="text"
                       id="form-company"
                       name="company"
-                      value=""
-                      required
                       placeholder="John & Doe ®"
                     />
                   </div>
@@ -416,8 +454,6 @@
                       type="text"
                       id="form-service"
                       name="service"
-                      value=""
-                      required
                       placeholder="Web Design, Web Development ..."
                     />
                   </div>
@@ -465,14 +501,14 @@
                 <ul class="links-wrap">
                   <li class="btn btn-link btn-link-external">
                     <a
-                      href="mailto:info@dennissnellenberg.com"
+                      href="mailto:vishal.webengg@gmail.com"
                       class="btn-click magnetic"
                       data-strength="20"
                       data-strength-text="10"
                     >
                       <span class="btn-text">
                         <span class="btn-text-inner"
-                          >info@dennissnellenberg.com</span
+                          >vishal.webengg@gmail.com</span
                         >
                       </span>
                     </a>
@@ -501,7 +537,7 @@
                 <ul class="links-wrap">
                   <li class="btn btn-link btn-link-external">
                     <a
-                      href="https://www.awwwards.com/dennissnellenberg/"
+                      href="https://github.com/vishal257"
                       target="_blank"
                       class="btn-click magnetic"
                       data-strength="20"
@@ -514,7 +550,7 @@
                   </li>
                   <li class="btn btn-link btn-link-external">
                     <a
-                      href="https://www.instagram.com/codebydennis/"
+                      href="https://www.instagram.com/itz_vishal6436/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
                       target="_blank"
                       class="btn-click magnetic"
                       data-strength="20"
@@ -540,7 +576,7 @@
                   </li>
                   <li class="btn btn-link btn-link-external">
                     <a
-                      href="https://www.linkedin.com/in/dennissnellenberg/"
+                      href="https://www.linkedin.com/in/vishal-4a3724289"
                       target="_blank"
                       class="btn-click magnetic"
                       data-strength="20"
@@ -569,7 +605,7 @@
                 </div>
                 <div class="time">
                   <h5>Local time</h5>
-                  <p><span id="timeSpan">09:41 PM CET</span></p>
+                  <p><span id="timeSpan">09:41 PM</span></p>
                 </div>
               </div>
               <div class="flex-col">
@@ -578,7 +614,7 @@
                   <ul>
                     <li class="btn btn-link btn-link-external">
                       <a
-                        href="https://www.awwwards.com/dennissnellenberg/"
+                        href="https://github.com/vishal257"
                         target="_blank"
                         class="btn-click magnetic"
                         data-strength="20"
@@ -591,7 +627,7 @@
                     </li>
                     <li class="btn btn-link btn-link-external">
                       <a
-                        href="https://www.instagram.com/codebydennis/"
+                        href="https://www.instagram.com/itz_vishal6436/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
                         target="_blank"
                         class="btn-click magnetic"
                         data-strength="20"
@@ -617,7 +653,7 @@
                     </li>
                     <li class="btn btn-link btn-link-external">
                       <a
-                        href="https://www.linkedin.com/in/dennissnellenberg/"
+                        href="https://www.linkedin.com/in/vishal-4a3724289"
                         target="_blank"
                         class="btn-click magnetic"
                         data-strength="20"
@@ -646,7 +682,10 @@
 
     <script src="assets/js/locomotive-scroll.min.js"></script>
     <script defer src="assets/js/index-new.js"></script>
+    <script>
+          const form = document.getElementById("my-form").onsubmit(function(e) {
+   e.preventDefault();
+});
+    </script>
   </body>
-
-  <!-- Mirrored from dennissnellenberg.com/contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Apr 2024 18:49:48 GMT -->
 </html>
