@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta
-    http-equiv="content-type"
-    content="text/html;charset=UTF-8"
-  />
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
     <meta charset="utf-8" />
     <meta
@@ -11,53 +8,6 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <title>Contact - Vishal</title>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-
-
-<script type="text/javascript">
-  function sendEmail(){
-    const name = document.querySelector('#form-name').value;
-    const email = document.querySelector('#form-email').value;
-    const company = document.querySelector('#form-company').value;
-    const service = document.querySelector('#form-service').value;
-    const message = document.querySelector('#form-message').value;
-
-    const eBody = `<b>Name: </b>${name}
-    <br/>
-    <b>Email: </b>${email}
-    <br/>
-    <b>Company: </b>${company}
-    <br/>
-    <b>Service: </b>${service}
-    <br/>
-    <b>Message: </b>${message}`;
-
-    Email.send({
-    SecureToken : "ceb7a6fb-1e69-47fa-a1bf-50816ac8135e",
-    To : 'vishal.webengg@gmail.com',
-    From : "vishal.webengg@gmail.com",
-    Subject : "Enquiry From Portfolio",
-    Body : eBody
-})
-          .then(function (message) {
-            console.log(message);
-            if(message === 'OK'){
-              window.location.href = "success.html"
-            }else{
-              alert("Something went wrong!");
-            }
-          });
-
-  }
- 
-  
-</script>
-
-
-
-
-
 
     <meta
       name="description"
@@ -68,9 +18,7 @@
       property="og:description"
       content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the India."
     />
-    <meta
-      property="og:image"
-    />
+    <meta property="og:image" />
     <meta property="og:site_name" content="Vishal" />
     <meta property="og:locale" content="en" />
     <meta property="og:type" content="website" />
@@ -79,19 +27,31 @@
       property="twitter:description"
       content="Let's start a project together. Reach out via email or hop on a call. I work with companies from all over the world from my office in the India."
     />
-    <meta
-      property="twitter:image"
-    />
+    <meta property="twitter:image" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="google" content="notranslate" />
     <meta property="og:locale" content="en" />
     <link rel="canonical" href="contact.html" />
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico">
-    <link rel="manifest" href="assets/img/icons/site.webmanifest">
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/icons/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico" />
+    <link rel="manifest" href="assets/img/icons/site.webmanifest" />
 
     <link
       rel="preload"
@@ -122,6 +82,13 @@
 
       gtag("config", "G-SGWQQRQ15Y");
     </script>
+    <script>
+      function time(){
+        setTimeout(() => {
+          window.location.href = 'contact.html';
+        }, 100)
+      }
+    </script>
   </head>
 
   <body data-barba="wrapper">
@@ -132,7 +99,7 @@
           <div class="rounded-div"></div>
         </div>
         <div class="loading-words">
-        <h2 class="active">
+          <h2 class="active">
             Contact
             <div class="dot"></div>
           </h2>
@@ -212,6 +179,7 @@
               <li class="btn btn-link active">
                 <a
                   href="contact.html"
+                  onclick="time();"
                   class="btn-click magnetic"
                   data-strength="24"
                   data-strength-text="12"
@@ -224,41 +192,65 @@
             </ul>
           </div>
           <div class="row social-row">
-                        <div class="stripe"></div>
-                        <div class="socials">
-                            <h5>Socials</h5>
-                            <ul>
-                                <li class="btn btn-link btn-link-external">
-                                    <a href="https://github.com/vishal257" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                        <span class="btn-text">
-                                            <span class="btn-text-inner">Github</span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="btn btn-link btn-link-external">
-                                    <a href="https://www.instagram.com/itz_vishal6436/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                        <span class="btn-text">
-                                            <span class="btn-text-inner">Instagram</span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="btn btn-link btn-link-external">
-                                    <a href="https://twitter.com/codebydennis" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                        <span class="btn-text">
-                                            <span class="btn-text-inner">Twitter</span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="btn btn-link btn-link-external">
-                                    <a href="https://www.linkedin.com/in/vishal-4a3724289" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
-                                        <span class="btn-text">
-                                            <span class="btn-text-inner">LinkedIn</span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="stripe"></div>
+            <div class="socials">
+              <h5>Socials</h5>
+              <ul>
+                <li class="btn btn-link btn-link-external">
+                  <a
+                    href="https://github.com/vishal257"
+                    target="_blank"
+                    class="btn-click magnetic"
+                    data-strength="20"
+                    data-strength-text="10"
+                  >
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Github</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link btn-link-external">
+                  <a
+                    href="https://www.instagram.com/vishal.webengg/"
+                    target="_blank"
+                    class="btn-click magnetic"
+                    data-strength="20"
+                    data-strength-text="10"
+                  >
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Instagram</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link btn-link-external">
+                  <a
+                    href="https://twitter.com/Vishal_webengg"
+                    target="_blank"
+                    class="btn-click magnetic"
+                    data-strength="20"
+                    data-strength-text="10"
+                  >
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Twitter</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link btn-link-external">
+                  <a
+                    href="https://www.linkedin.com/in/vishal-4a3724289"
+                    target="_blank"
+                    class="btn-click magnetic"
+                    data-strength="20"
+                    data-strength-text="10"
+                  >
+                    <span class="btn-text">
+                      <span class="btn-text-inner">LinkedIn</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div class="main-wrap" data-scroll-container>
@@ -281,8 +273,8 @@
                       <span class="code-by">Code by </span
                       ><span class="dennis"
                         ><span class="dennis-span">Vishal</span>
-                        <span class="snellenberg"></span></span
-                      >
+                        <span class="snellenberg"></span
+                      ></span>
                     </div>
                   </span>
                 </a>
@@ -316,6 +308,7 @@
               <li class="btn btn-link active">
                 <a
                   href="contact.html"
+                  onclick="time();"
                   class="btn-click magnetic"
                   data-strength="20"
                   data-strength-text="10"
@@ -392,11 +385,7 @@
             </div>
             <div class="row once-in">
               <div class="flex-col">
-                <form
-                  class="form"
-                  onsubmit="sendEmail()"
-                  id="my-form"
-                >
+                <form class="form" id="my-form">
                   <!-- <div class="website-field">
                     <label class="label" for="tel">Phone Number</label>
                     <input
@@ -415,7 +404,6 @@
                       type="text"
                       id="form-name"
                       name="name"
-                      required
                       placeholder="John Doe *"
                     />
                   </div>
@@ -427,7 +415,6 @@
                       type="email"
                       id="form-email"
                       name="email"
-                      required
                       placeholder="john@doe.com *"
                     />
                   </div>
@@ -466,7 +453,6 @@
                       id="form-message"
                       name="message"
                       rows="8"
-                      required
                       placeholder="Hello Vishal, can you help me with ... *"
                     ></textarea>
                   </div>
@@ -515,13 +501,13 @@
                   </li>
                   <li class="btn btn-link btn-link-external">
                     <a
-                      href="tel:+31627847430"
+                      href="tel:+916283127981"
                       class="btn-click magnetic"
                       data-strength="20"
                       data-strength-text="10"
                     >
                       <span class="btn-text">
-                        <span class="btn-text-inner">+91 62 83 12</span>
+                        <span class="btn-text-inner">+91 62 83 12 79 81</span>
                       </span>
                     </a>
                   </li>
@@ -529,9 +515,8 @@
                 <h5>Business Details</h5>
                 <ul class="links-wrap">
                   <li><p>Vishal</p></li>
-                  <li><p>CoC: 92411711</p></li>
-                  <li><p>VAT: NL866034080B01</p></li>
-                  <li><p>Location: India</p></li>
+                  <li><p>Ph no.: +91 62 83 12 79 81</p></li>
+                  <li><p>Location: Punjab,India</p></li>
                 </ul>
                 <h5>Socials</h5>
                 <ul class="links-wrap">
@@ -550,7 +535,7 @@
                   </li>
                   <li class="btn btn-link btn-link-external">
                     <a
-                      href="https://www.instagram.com/itz_vishal6436/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                      href="https://www.instagram.com/vishal.webengg/"
                       target="_blank"
                       class="btn-click magnetic"
                       data-strength="20"
@@ -563,7 +548,7 @@
                   </li>
                   <li class="btn btn-link btn-link-external">
                     <a
-                      href="https://twitter.com/codebydennis"
+                      href="https://twitter.com/Vishal_webengg"
                       target="_blank"
                       class="btn-click magnetic"
                       data-strength="20"
@@ -627,7 +612,7 @@
                     </li>
                     <li class="btn btn-link btn-link-external">
                       <a
-                        href="https://www.instagram.com/itz_vishal6436/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                        href="https://www.instagram.com/vishal.webengg/"
                         target="_blank"
                         class="btn-click magnetic"
                         data-strength="20"
@@ -640,7 +625,7 @@
                     </li>
                     <li class="btn btn-link btn-link-external">
                       <a
-                        href="https://twitter.com/codebydennis"
+                        href="https://twitter.com/Vishal_webengg"
                         target="_blank"
                         class="btn-click magnetic"
                         data-strength="20"
@@ -682,10 +667,17 @@
 
     <script src="assets/js/locomotive-scroll.min.js"></script>
     <script defer src="assets/js/index-new.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="assets/js/email.js"></script>
     <script>
-          const form = document.getElementById("my-form").onsubmit(function(e) {
-   e.preventDefault();
-});
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          sendEmail();
+        });
+      });
     </script>
   </body>
 </html>
