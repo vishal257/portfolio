@@ -754,6 +754,28 @@ main.touch .main-wrap {
    white-space: nowrap;
 }
 
+.tech-stack::before{
+   content: "";
+   width:10vw;
+   height: 50%;
+   background: linear-gradient(to left, rgba(255,255,255,0),#ffffff);
+   z-index: 2;
+   position: absolute;
+   top:0;
+   left:0;
+}
+
+.tech-stack::after{
+   content: "";
+   width:10vw;
+   height: 50%;
+   background: linear-gradient(to right, rgba(255,255,255,0),#ffffff);
+   z-index: 2;
+   position: absolute;
+   top:0;
+   right:0;
+}
+
 .tech-stack .logo-wrap{
    display: flex;
    animation: slider 20s infinite linear;
