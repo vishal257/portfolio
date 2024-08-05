@@ -16,9 +16,10 @@ const sendEmail = () => {
     <b>Message: </b>${message}`;
 
     Email.send({
-        SecureToken: "ceb7a6fb-1e69-47fa-a1bf-50816ac8135e",
-        To: "vishal.webengg@gmail.com",
-        From: "vishal.webengg@gmail.com",
+        // SecureToken: "ceb7a6fb-1e69-47fa-a1bf-50816ac8135e",
+        SecureToken: "83cbc6e3-944e-4a3a-8d13-0a88bd3f113f",
+        To: "vishal.webengg+2@gmail.com",
+        From: "vishal.webengg+2@gmail.com",
         Subject: "Enquiry From Portfolio",
         Body: eBody,
     }).then((message) => {
